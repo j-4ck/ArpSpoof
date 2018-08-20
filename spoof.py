@@ -1,3 +1,4 @@
+# long live deletehumanity
 from scapy.all import *
 import sys
 import os
