@@ -60,7 +60,7 @@ def mitm(rtrIP, tgtIP, tgtMac, rtrMac):
 def main():
 	victim = sys.argv[1]
 	router = str(netifaces.gateways()['default'][2][0])
-	conf.iface = netifaces.gateways()['default'][2][1]
+	conf.iface = str(netifaces.gateways()['default'][2][1])
 	print 'Using default interface: ' + c.g+conf.iface+c.w
 	print Style.BRIGHT + 'Getting MAC addresses...'
 	targetMac = getMac(victim)
